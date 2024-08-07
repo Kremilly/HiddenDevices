@@ -8,14 +8,14 @@ use std::{
 
 use winapi::{
     shared::{
+        minwindef::DWORD,
         ntdef::LPWSTR,
         guiddef::GUID,
-        minwindef::DWORD,
     },
 
     um::setupapi::{
-        DIGCF_PRESENT, 
-        SP_DEVINFO_DATA
+        DIGCF_PRESENT,
+        SP_DEVINFO_DATA,
         SetupDiGetClassDevsW, 
         SetupDiEnumDeviceInfo, 
         SetupDiDestroyDeviceInfoList, 
