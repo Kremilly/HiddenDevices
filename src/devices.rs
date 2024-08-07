@@ -23,11 +23,11 @@ use winapi::{
     },
 };
 
-pub struct USB;
+pub struct Devices;
 
-impl USB {
+impl Devices {
 
-    pub fn get_devices() {
+    pub fn list_all() {
         unsafe {
             let usb_guid = GUID {
                 Data1: 0x36FC9E60,

@@ -1,9 +1,7 @@
-extern crate winapi;
+mod devices;
 
-pub mod usb;
-
-use usb::USB;
+use devices::Devices;
 
 fn main() {
-    USB::get_devices();
+    Devices::list_all();
 }
